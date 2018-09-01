@@ -1,55 +1,87 @@
-@import url('fonts/Cagliostro.css');
-
+@import url("fonts/Cagliostro.css");
 * {
-    padding:0;
-    margin: 0;
-    font-family: 'Cagliostro', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-family: "Cagliostro", sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
 }
 
 body, html {
-    height: 100%;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    background-color:#30343f;
-    color: #fff0ef;
-    text-align: center;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #30343f;
+  color: #fff0ef;
+  text-align: center;
 }
 
-.title {
-    padding: 48px  0 40px 0;
-    font-size: 32px;
+body {
+  overflow: auto;
+  width: 560px;
+}
+body .language {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+body .language img {
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+body .contain-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 0 32px 0;
+}
+body .contain-title h1 {
+  font-size: 32px;
+}
+body .infos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .infos p {
+  text-align: left;
+}
+body .infos a {
+  width: fit-content;
+  color: #F4989C;
+  font-size: 24px;
+}
+body .infos a:hover {
+  color: #6158A5;
+  transition: color 0.25s;
+}
+body .infos a.beta {
+  margin: 8px 0 8px 0;
+}
+body .infos .discord-link img {
+  width: 150px;
+}
+body .youtube {
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
 }
 
-.discord {
-    padding-bottom: 16px;
-
+@media all and (max-width: 750px) {
+  body {
+    width: 90%;
+  }
 }
 
-.discord .images-container {
-    padding-top: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.discord  .images-container .discord-link {
-    width: 150px;
-}
-
-.discord .images-container .neko {
-    width: 100px;
-    height: 100px;
-    background-image: url("images/cat_white.PNG");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.youtube {
-    width: 560px;
-    height: 315px;
-    max-width: calc(100% - 48px);
-}
+/*# sourceMappingURL=style.css.map */
